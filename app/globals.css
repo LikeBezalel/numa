@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-cream bg-botanical-fade text-forest font-sans antialiased;
+}
+
+.section {
+  @apply mx-auto w-full max-w-6xl px-5 py-16 md:px-8 md:py-24;
+}
+
+.h1 {
+  @apply font-serif text-4xl leading-tight md:text-6xl;
+}
+
+.h2 {
+  @apply font-serif text-3xl leading-tight md:text-4xl;
+}
+
+.eyebrow {
+  @apply text-[11px] uppercase tracking-[0.28em] text-plum/85;
+}
+
+.card {
+  @apply rounded-2xl border border-forest/10 bg-ivory/90 p-6 shadow-soft backdrop-blur;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-cream transition hover:bg-plum;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-forest/30 bg-white/80 px-6 py-3 text-sm font-semibold text-forest transition hover:border-forest hover:bg-sage/40;
+}
+
+.texture {
+  background-image: radial-gradient(circle at 22% 12%, rgba(255, 255, 255, 0.5) 0, transparent 23%),
+    radial-gradient(circle at 83% 79%, rgba(31, 59, 47, 0.16) 0, transparent 34%);
+}
