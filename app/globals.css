@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-cream text-forest font-sans;
+}
+
+.section {
+  @apply mx-auto w-full max-w-6xl px-5 py-16 md:px-8 md:py-24;
+}
+
+.h1 {
+  @apply font-serif text-4xl leading-tight md:text-6xl;
+}
+
+.h2 {
+  @apply font-serif text-3xl leading-tight md:text-4xl;
+}
+
+.card {
+  @apply rounded-2xl bg-white/80 p-6 shadow-soft backdrop-blur;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-forest px-6 py-3 text-sm font-semibold text-cream transition hover:bg-berry;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-forest/30 bg-white/80 px-6 py-3 text-sm font-semibold text-forest transition hover:border-forest hover:bg-sage/50;
+}
