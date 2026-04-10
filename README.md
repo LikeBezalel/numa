@@ -3,7 +3,7 @@
 Premium, conversion-focused marketing site for a boutique açaí event catering brand.
 
 ## Stack
-- Next.js (App Router)
+- Next.js 16 (App Router, latest stable line)
 - TypeScript
 - Tailwind CSS
 
@@ -58,3 +58,7 @@ An unlinked internal CRM board page is implemented at:
 - Açaí/event business: store guest_count, venue, package in `custom_fields`.
 - Painting business: store property_type, square_footage, paint_scope in `custom_fields`.
 - Keep board/column naming per client while preserving shared workflow engine.
+
+
+## Versioning note
+- Pinned to modern semver ranges compatible with Vercel deployments (`next@^16.2.2`, `react@^19.2.0`).
